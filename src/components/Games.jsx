@@ -5,11 +5,8 @@ import rr from "../assets/9b80a2d6-7bf6-4a62-8057-9d298d4a15de.png"
 import sf from "../assets/Street_Fighter_old_logo.png"
 import mario from "../assets/mario-bros-huge-batch-official-art-for-mario-party-star-rush-mario-party-legacy-27.png"
 import hotd from "../assets/dfe1f3e3-ee1e-46ca-ad21-99766e62a6a6.png"
-import Fade from 'react-reveal/Fade';
-
 const Games = () => {
   return (
-    <Fade right>
 
     <Box display={"flex"} className='OverImage' overflowWrap={'image'} mt={"5vw"} id='games'>
             <Image src={page} width={"97vw"}></Image>
@@ -30,7 +27,6 @@ const Games = () => {
             </a>
             </Box>
         </Box>
-    </Fade>
   )
 }
 

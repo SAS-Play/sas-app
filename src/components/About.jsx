@@ -1,12 +1,11 @@
 import React from 'react'
 import page from "../assets/About Page.png"
 import { Box, Image } from '@chakra-ui/react'
-import Fade from 'react-reveal/Fade';
+
 
 
 const About = () => {
     return (
-        <Fade left>
 
             <Box display={"flex"} className='OverImage' overflowWrap={'image'} id='about'>
                 <Image src={page} width={"97vw"}></Image>
@@ -20,9 +19,7 @@ const About = () => {
                     NEW WAY OF PLAYING THE OLD
                 </Box>
 
-            </Box>
-        </Fade>
-    )
+            </Box>    )
 }
 
 export default About

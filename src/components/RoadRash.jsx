@@ -10,8 +10,7 @@ import {
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 
 import rrpage from "../assets/RRPage3.png"
-import Fade from 'react-reveal/Fade';
-import Tada from 'react-reveal/Tada';
+
 
 
 import arcade from "../assets/Road Rash Carousels/Daco_4635355.png"
@@ -44,7 +43,6 @@ const RoadRash = () => {
                 justifyContent={"space-around"}
                 w={"100vw"}
             >
-                <Fade left>
 
                 <Box display={"flex"} flexDir={"row"}>
                     <Box className='image-overlay-container'>
@@ -54,7 +52,6 @@ const RoadRash = () => {
                         </Box>
                     </Box>
                 </Box>
-                </Fade>
             </Box>
             <Box maxH={"100%"}
                 fontSize={"2.5vw"}
@@ -65,8 +62,6 @@ const RoadRash = () => {
                 w={"100vw"}
                 ml={"-10vw"}
             >
-                <Fade left>
-
                 <Box display={"flex"} flexDir={"row"}>
                     <Box maxWidth={"100vw"} className='image-overlay-container'>
 
@@ -77,12 +72,9 @@ const RoadRash = () => {
                         </Box>
                     </Box>
                 </Box>
-                </Fade>
 
                 <Box display={"flex"} flexDir={"column"}>
-                    <Tada forever>
                     <Box fontSize={"5vw"}>How To Play ?</Box>
-                    </Tada>
                     <List spacing={0.5} fontSize={"2vw"} maxWidth={"40vw"}>
                         <ListItem>
                             <ListIcon as={ArrowForwardIcon} color='green.500' />

@@ -8,8 +8,7 @@ import {
     UnorderedList,
 } from '@chakra-ui/react'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
-import Fade from 'react-reveal/Fade';
-import Tada from 'react-reveal/Tada';
+
 import sfpage from "../assets/SF/SF_PAGE.png"
 
 
@@ -35,7 +34,6 @@ const StreetFighterPage = () => {
                 justifyContent={"space-around"}
                 w={"100vw"}
             >
-                <Fade right>
                 <Box display={"flex"} flexDir={"row"}>
                     <Box className='image-overlay-container'>
 
@@ -46,7 +44,6 @@ const StreetFighterPage = () => {
                         </Box>
                     </Box>
                 </Box>
-                </Fade>
             </Box>
             <Box maxH={"100%"}
                 fontSize={"2.5vw"}
@@ -58,7 +55,6 @@ const StreetFighterPage = () => {
                 ml={"-10vw"}
             >
                 <Box display={"flex"} flexDir={"row"}>
-                    <Fade left>
 
                     <Box maxWidth={"100vw"} className='image-overlay-container'>
                         <Image ml={"20vw"} src={tv} className='image-frame' width={"25vw"}></Image>
@@ -66,13 +62,10 @@ const StreetFighterPage = () => {
                         <SfInstruction/>
                         </Box>
                     </Box>
-                    </Fade>
                 </Box>
 
                 <Box display={"flex"} flexDir={"column"}>
-                    <Tada forever>
                     <Box fontSize={"5vw"}>How To Play ?</Box>
-                    </Tada>
                     <List spacing={0.5} fontSize={"2vw"} maxWidth={"40vw"}>
                         <ListItem>
                             <ListIcon as={ArrowForwardIcon} color='green.500' />

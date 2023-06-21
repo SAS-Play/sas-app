@@ -11,8 +11,7 @@ import tv from "../assets/TvFrame2.png"
 import mariogame from "../assets/Mario/super-mario-brothers-power-up 1.gif"
 
 import MarioInsturction from './MarioInsturction'
-import Fade from 'react-reveal/Fade';
-import Tada from 'react-reveal/Tada';
+
 
 const MarioPage = () => {
     return (
@@ -35,7 +34,6 @@ const MarioPage = () => {
                 justifyContent={"space-around"}
                 w={"100vw"}
             >
-                <Fade up>
 
                 <Box display={"flex"} flexDir={"row"}>
                     <Box className='image-overlay-container'>
@@ -45,7 +43,6 @@ const MarioPage = () => {
                         </Box>
                     </Box>
                 </Box>
-                </Fade>
             </Box>
             <Box maxH={"100%"}
                 fontSize={"2.5vw"}
@@ -56,7 +53,6 @@ const MarioPage = () => {
                 w={"100vw"}
                 ml={"-10vw"}
             >
-                        <Fade left>
                 <Box display={"flex"} flexDir={"row"}>
                     <Box maxWidth={"100vw"} className='image-overlay-container'>
 
@@ -67,12 +63,9 @@ const MarioPage = () => {
                         </Box>
                     </Box>
                 </Box>
-                        </Fade>
 
                 <Box display={"flex"} flexDir={"column"}>
-                <Tada forever>
                     <Box fontSize={"5vw"}>How To Play ?</Box>
-                    </Tada>
                     <List spacing={0.5} fontSize={"2vw"} maxWidth={"40vw"}>
                         <ListItem>
                             <ListIcon as={ArrowForwardIcon} color='green.500' />

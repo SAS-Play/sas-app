@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import devbg from "../assets/dev bg.png"
 import { Box,Text } from '@chakra-ui/react';
 import { useToast } from '@chakra-ui/react'
-import Fade from 'react-reveal/Fade';
 const Contact = () => {
 
     const [name, setName] = useState('');
@@ -53,15 +52,13 @@ const Contact = () => {
    
     <Box id='contact' backgroundImage={devbg}>
     <section className="contact" id="contact">
-      <Fade down>
+
     <Box fontSize={"3rem"} className="heading" display={"flex"} justifyContent={"center"} >
       <Text mr={"1rem"} >Contact</Text>
       <Text color={"#0ef"}>Us!</Text>
     </Box>
-    </Fade>
     <form name='submit-to-google-sheet' onSubmit={handleSubmit}>
       <div className="input-box">
-        <Fade left>
         <div className="input-field">
           <input
             type="text"
@@ -73,8 +70,6 @@ const Contact = () => {
           />
           <span className="focus"></span>
         </div>
-        </Fade>
-        <Fade right>
         <div className="input-field">
           <input
             type="text"
@@ -86,11 +81,9 @@ const Contact = () => {
           />
           <span className="focus"></span>
         </div>
-        </Fade>
       </div>
 
       <div className="input-box">
-        <Fade left>
         <div className="input-field">
           <input
             type="number"
@@ -102,9 +95,7 @@ const Contact = () => {
           />
           <span className="focus"></span>
         </div>
-        </Fade>
 
-        <Fade right>
         <div className="input-field">
           <input
             type="text"
@@ -116,9 +107,7 @@ const Contact = () => {
           />
           <span className="focus"></span>
         </div>
-        </Fade>
       </div>
-    <Fade up>
       <div className="textarea-field">
         <textarea
           name="Message"
@@ -131,15 +120,12 @@ const Contact = () => {
         ></textarea>
         <span className="focus"></span>
       </div>
-      </Fade>
       <br />
-      <Fade up>
       <div className="btn-box-submit">
         <button onClick={handleSubmit} type="submit" className="btn-submit">
           Submit
         </button>
       </div>
-      </Fade>
     </form>
     <br />
     <marquee id="msg" width="100%" direction="left" height="100px"></marquee>

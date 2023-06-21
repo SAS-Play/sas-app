@@ -9,9 +9,7 @@ import HOTDpage from "../assets/HOTD PAGE.png"
 import arcade from "../assets/HOTD/arcade.png"
 import tv from "../assets/TvFrame2.png"
 import hotdgame from "../assets/HOTD/gameplay.gif"
-import Shake from 'react-reveal/Shake';
-import Fade from 'react-reveal/Fade';
-import Tada from 'react-reveal/Tada';
+
 
 import control from"../assets/HOTD/control.png" 
 
@@ -35,7 +33,6 @@ const HOTDPage = () => {
                 justifyContent={"space-around"}
                 w={"100vw"}
             >
-                <Fade right>
                 <Box display={"flex"} flexDir={"row"}>
                     <Box className='image-overlay-container'>
                         <Image src={arcade} className='image-frame' width={"70vw"}></Image>
@@ -44,7 +41,6 @@ const HOTDPage = () => {
                         </Box>
                     </Box>
                 </Box>
-                </Fade>
             </Box>
             <Box maxH={"100%"}
                 fontSize={"2.5vw"}
@@ -56,7 +52,6 @@ const HOTDPage = () => {
                 ml={"-10vw"}
             >
                 <Box display={"flex"} flexDir={"row"}>
-                    <Fade left>
 
                     <Box maxWidth={"100vw"} className='image-overlay-container'>
                         <Image ml={"20vw"} src={tv} className='image-frame' width={"25vw"}></Image>
@@ -64,13 +59,10 @@ const HOTDPage = () => {
                             <Image src={control}></Image>
                         </Box>
                     </Box>
-                    </Fade>
                 </Box>
 
                 <Box display={"flex"} flexDir={"column"}>
-                    <Tada forever>
                     <Box fontSize={"5vw"}>How To Play ?</Box>
-                    </Tada>
                     <List spacing={0.5} fontSize={"2vw"} maxWidth={"40vw"}>
                         <ListItem>
                             <ListIcon as={ArrowForwardIcon} color='green.500' />
