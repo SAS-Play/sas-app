@@ -34,7 +34,7 @@ const Navbarele = () => {
               <a style={{color:"cyan"}} className="nav-link active" aria-current="page" href="#devs">Devs</a>
             </li>
             <li style={{marginLeft:"5rem",marginRight:"2rem"}} className="nav-item">
-              <a style={{color:"#00ff1f"}} className="nav-link active" target='_blank' aria-current="page" href="https://www.dropbox.com/scl/fo/8ljc59yz80gn3dyqkwzaw/h?dl=0&rlkey=53t5hj3gar4g4zzhnwh6l4ykf">Download</a>
+              <a style={{color:"#00ff1f"}} className="nav-link active" target='_blank' aria-current="page" href="https://www.dropbox.com/scl/fo/lmilm2zpk3wj24c2mdv59/h?dl=0&rlkey=0nivjkcnadvf3phd74j8bnbqc">Download</a>
             </li>
             <li style={{marginLeft:"5rem",marginRight:"2rem"}} className="nav-item">
               <a style={{color:"beige"}} className="nav-link active" aria-current="page" href="#contact">Contact</a>
