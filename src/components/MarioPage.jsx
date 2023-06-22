@@ -85,7 +85,7 @@ const MarioPage = () => {
                         </ListItem>
                         <ListItem>
                             <ListIcon as={ArrowForwardIcon} color='green.500' />
-                            Note: You need to move back to the initial position i.e. stand erect for not moving.
+                            Note: You need to move back to the initial position i.e. stand erect for not moving and Num Lock should be Off while playing.
                         </ListItem>
                         <Box fontSize={"5vw"} color={"yellow"}>Happy Gaming</Box>
                     </List>
